@@ -2,7 +2,7 @@ import { CORE_CONCEPTS, EXAMPLES } from "./data.js";
 import Header from "./components/Header/Header.jsx";
 import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton.jsx";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState(null);
@@ -12,7 +12,7 @@ function App() {
   }
 
   return (
-    <div>
+    <Fragment>
       <Header />
       <main>
         <section id="core-concepts">
@@ -48,7 +48,7 @@ function App() {
           </div>
         </section>
       </main>
-    </div>
+    </Fragment>
   );
 }
 
