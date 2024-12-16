@@ -35,7 +35,7 @@ function App() {
           </menu>
           <div id="tab-content">
             {!selectedTopic ? (
-              <p>Please select a topic!</p>
+              <p>Please select a topic.</p>
             ) : (
               <div>
                 <h3>{EXAMPLES[selectedTopic].title}</h3>
